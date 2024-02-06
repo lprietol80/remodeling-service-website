@@ -1,0 +1,175 @@
+:root{
+	--red-backgroung:rgba(143, 29, 29, 0.88);
+	--font-red:#B52126;
+	--font-black:#080a0c;
+	--btn-background:#fecc4c; 
+	--btn-border:#feac32;
+	--btn-hover-background:#feac32;
+	--btn-hover-border:#fecc4c;
+}
+
+
+
+
+/* -----------Navegation section -------- */
+header{
+	position: fixed;
+	top: 0.125rem;
+	left: 0.125rem;
+	right:0.125rem;
+	box-shadow: 0rem 0.125rem 0.625rem rgb(243, 243, 243,0.5);
+}
+.navbar{
+	padding: 2rem;
+	background-color: #F5F6F7;
+}
+.navbar-logo-img{
+	border: none;
+	border-radius: 0px 1.25rem;
+	height: 5rem;
+}
+.nav-font{
+	color: var(--font-black);
+	font-weight: bold;
+	font-size: 1.25rem;
+
+}
+.nav-font:hover{
+	color: var(--font-red);
+	border-bottom: 0.125rem solid var(--font-red);
+	font-weight: 900;
+}
+.nav-phone{
+	color: var(--font-red);
+	margin: 0.313rem;
+	font-size: 1.575rem;
+	text-align: end;
+
+}
+.nav-call-btn{
+	margin: 0.313rem;
+	border: 0.125rem solid var(--btn-border);
+	border-radius: 0.75rem;
+	background-color:var(--btn-background);
+	font-size: 1.2rem;
+	color: var(--font-black);
+	padding: 0.825rem 3rem;
+	max-width:fit-content;
+	text-align: center;
+	transition: transform 0.3s;
+	text-decoration: none;
+}
+.nav-call-btn:hover{
+	transform: scale(1.1);
+	background-color: var(--btn-hover-background);
+	border: 0.125rem solid var(--btn-hover-border);
+	color:var(--font-red);
+	font-weight: bold;
+}
+
+i{
+	margin-right:0.8rem;
+}
+.navbar-collapse{
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* ////////section principal//////// */
+main{
+	margin-top: 9.888rem;
+	/*background-color: #8D7272;*/
+	padding-top: 1.563rem;
+	display: flex;
+	flex-direction: column;
+	/*top: 0.125rem;
+	left: 0.125rem;
+	right:0.125rem;	*/ 
+}
+
+
+#profile-container{
+	background-color: var(--red-backgroung);
+	background-image: url(img/profileBackgroundImg.PNG);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 15.625rem;
+	padding-bottom: 15.625rem;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+#profile-img{
+	width:18rem;
+	border: none;
+	border-radius: 9rem;
+	margin: 1.5rem;
+}
+#profile-title{
+	font-size: 4.25rem;
+	font-weight: bold;
+	color: var(--font-red);
+	margin: 1rem;
+}
+#profile-subtitle{
+	font-size: 3.625rem;
+	font-weight: bold;
+	color: var(--btn-border);
+}
+
+/* Nuestro proceso*/
+.article-container{
+	font-size: 36px;
+	margin: 5.5rem 0rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* mejorar: colocar clases o herencias eg div > h2 etc */
+.subtitle{
+	font-size: 3.625rem;
+	margin-bottom: 5.5rem;
+	color: var(--btn-border);
+}
+.art-paragraph{
+	max-width: 1400px;
+	font-size:1.625rem ;
+
+}
+
+div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+figure img{
+	width: 350px;
+
+}
+figure img figcaption {
+	justify-content: center;
+}
+
+
+
+
+						/* /////////adaptable///////// */
+
+ /* ///adaptable nav/// */
+@media screen and (max-width:47.938rem){
+	.navbar-brand{
+		display: none;
+	}
+	.row{
+		display: none;
+	}	
+}
+
+@media screen and (min-width:48rem){
+	.navbar-small{
+		display: none;
+	}
+	
+}

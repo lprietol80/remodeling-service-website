@@ -1,19 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- titulo -->
+  <title>Remodeling Services</title>
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,900&family=Roboto:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet">
+  <!-- metadatos -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css.css">
-  <script src="js.js" defer></script>
+  <meta name="Author" content="Luis Prieto">
+  <meta name="description" content="website de servicios">
+<!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!--CSS-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <!--Favicon-->
+  <link rel="icon" type="image/x-icon" href="img/logo.PNG">
 </head>
 <body>
 
-  <header>Header</header>
-  <nav>Nav</nav>
-  <aside>aside optional</aside>
-  <main>main</main>  
-  <footer>FOOTER</footer>
+  <header>
+    <!-- navegation section  -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img class="navbar-logo-img" src="img/logo.PNG" alt="company logo"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>          
+        </button>      
+          <a class="nav-call-btn navbar-small" href="tel:+19542183616">Click to call</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav-font" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link nav-font" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-font" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-font" href="#">Projects</a>
+            </li>
+          </ul>
+          <div class="row justify-content-end">
+            <a class="nav-phone" href="tel:+19542183616">
+              <i class="bi bi-telephone-fill"></i>1-(954) 218-3616</a>
+            <a class="nav-call-btn" href="tel:+19542183616">Click to call</a>
+          </div>
+
+
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <!-- ////////main section //////// -->
+
+  <main class="container-fluid">
+    <section>
+      <div id="profile-container">
+        <img id="profile-img" src="img/profileImg.PNG" alt="Foto Henry perfil">
+        <h1 id="profile-title">Hola, Soy Henry Luna</h1>
+        <h2 id="profile-subtitle">Experto en remodelación</h2>
+      </div>      
+    </section>
+    
+   
+      <article class="article-container">
+        <h2 class="subtitle">Remodela tu hogar, mejora tu calidad de vida</h2>
+        <p class="art-paragraph"> <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nihil sint sapiente qui consectetur quisquam sunt sed fugit esse omnis, dolorem reprehenderit odio deleniti repellat temporibus repudiandae asperiores aspernatur impedit.</strong></p>
+      </article>
+   
+    <section >
+      <h2>ASÍ ES NUESTRO PROCESO</h2>
+      <div>
+        <figure>
+          <img src="img/imgProceso1.PNG" alt="En nuestro procesos tus objetivos son lo primero">
+          <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nihil sint sapiente qui consectetur quisquam sunt sed fugit esse omnis, dolorem reprehenderit odio deleniti repellat temporibus repudiandae asperiores aspernatur impedit. </figcaption>
+        </figure>
+        <figure>
+          <img src="img/imgProceso2.PNG" alt="en el proceso determinar el proyectos es el segundo paso">
+          <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nihil sint sapiente qui consectetur quisquam sunt sed fugit esse omnis, dolorem reprehenderit odio deleniti repellat temporibus repudiandae asperiores aspernatur impedit.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/imgProceso3.PNG" alt="posteriormente realizamos la obra que satisfaga sus sueños.">
+          <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nihil sint sapiente qui consectetur quisquam sunt sed fugit esse omnis, dolorem reprehenderit odio deleniti repellat temporibus repudiandae asperiores aspernatur impedit.</figcaption>
+        </figure>
+
+
+
+      </div>
+
+    </section>
+
+
+
+  </main>  
+
+
+
   
+  <footer class="container-fluid">FOOTER</footer>
+  
+
+
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="js.js"></script>
+  
 </html>
